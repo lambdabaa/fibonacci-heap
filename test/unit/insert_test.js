@@ -1,5 +1,5 @@
-var FibonacciHeap = require('../index').FibonacciHeap,
-    Node = require('../index').Node;
+var FibonacciHeap = require('../../index').FibonacciHeap,
+    Node = require('../../index').Node;
 
 suite('FibonacciHeap#insert', function() {
   var subject, value;
