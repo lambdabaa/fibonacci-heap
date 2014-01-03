@@ -1,5 +1,5 @@
-var FibonacciHeap = require('../index').FibonacciHeap,
-    Node = require('../index').Node,
+var FibonacciHeap = require('../../index').FibonacciHeap,
+    Node = require('../../index').Node,
     stringify = require('json-stable-stringify');
 
 suite('FibonacciHeap#update', function() {
