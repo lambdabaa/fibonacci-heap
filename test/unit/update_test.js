@@ -67,6 +67,12 @@ suite('FibonacciHeap#update', function() {
     }), true);
   });
 
+  test('should update minimum immediately if child cut', function() {
+    subject.update({ value: 4, priority: 0 });
+    var min = subject.deleteMin();
+    assert.equal(min.value, 4);
+  });
+
   test('should mark parent when child cut', function() {
     subject.update({ value: 4, priority: 0 });
     assert.equal(subject.any(function(node) {

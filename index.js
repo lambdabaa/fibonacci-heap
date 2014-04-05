@@ -144,6 +144,9 @@ FibonacciHeap.prototype = {
       parent.removeChild(node);
       node.parent = null;
       this._rootList.push(node);
+      if (node.priority < this._min.priority) {
+        this._min = node;
+      }
       var key = stringify(node.value);
       this._mark[key] = false;
 
