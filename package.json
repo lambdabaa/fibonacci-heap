@@ -1,6 +1,6 @@
 {
   "name": "fibonacci-heap",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Fibonacci heap implementation",
   "main": "index.js",
   "dependencies": {
